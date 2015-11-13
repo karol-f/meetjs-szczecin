@@ -1,0 +1,26 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea
+*.tmp
+
+# Generated files #
+######################
+node_modules
+.sass-cache
+.bower-*
+report/
+bower_component
+docs/bower_components
+libs/
+dist
+coverage
+*.log
+docs/esdoc/
+docs/docco/
