@@ -1,0 +1,938 @@
+
+<!-- saved from url=(0058)http://strut.io/editor/preview_export/impress.html#/step-1 -->
+<html style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>MeetJS - Jak zaczynałam we Front-endzie</title>
+
+<meta name="description" content="Prezentacja">
+<meta name="author" content="Angelika Olejniczak">
+
+<style>
+.componentContainer {
+    position: absolute;
+    line-height: normal;
+    /*-webkit-transform-origin: 135% 135%;
+    -moz-transform-origin: 135% 135%;
+    transform-origin: 135% 135%;*/
+}
+
+.transformContainer {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<link rel="stylesheet" href="./AOL_Pres_MeetJS02-logo-white_files/default-reset.css">
+<link href="./AOL_Pres_MeetJS02-logo-white_files/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./AOL_Pres_MeetJS02-logo-white_files/default.css" id="theme">
+<link href="./AOL_Pres_MeetJS02-logo-white_files/web-fonts.css" rel="stylesheet" type="text/css">
+<link href="./AOL_Pres_MeetJS02-logo-white_files/backgroundClasses.css" rel="stylesheet" type="text/css">
+<link href="./AOL_Pres_MeetJS02-logo-white_files/surfaceClasses.css" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="http://strut.io/editor/preview_export/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="http://strut.io/editor/preview_export/apple-touch-icon.png" type="image/png">
+
+<style>
+.reveal.themedArea {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<script async="" src="./AOL_Pres_MeetJS02-logo-white_files/analytics.js"></script><script type="text/javascript" src="./AOL_Pres_MeetJS02-logo-white_files/dataset-shim.js"></script>
+<script type="text/javascript" src="./AOL_Pres_MeetJS02-logo-white_files/impress.js"></script>
+
+<script src="./AOL_Pres_MeetJS02-logo-white_files/onready.js"></script>
+<script src="./AOL_Pres_MeetJS02-logo-white_files/loadPresentation.js"></script>
+<script>
+ready(function() {
+    if (document.getElementById('launched-placeholder'))
+        loadPresentation();
+
+    if (!window.presStarted) {
+        startPres(document, window);
+        impress().init();   
+    }
+
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = 
+            "<p>Tap on the left or right to navigate</p>";
+    }
+});
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42322531-1', 'strut.io');
+    ga('send', 'pageview');
+    </script>
+</head>
+<body class="impress-supported impress-enabled" style="height: 100%; overflow: hidden;">
+<style type="text/css">
+.strut-surface .white-bullets ul li {
+	color: #ffffff;
+}
+
+.strut-surface .color-link a {
+	color: #b69c16;
+}
+
+.strut-surface .border-color {
+  border: 1px solid #8a8a8a;
+}
+</style>
+<style>
+
+	
+	.bg-custom-342f38 {
+		background: #342f38;
+	}
+
+
+</style>
+<style>
+
+
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+</style>
+<!-- This is a work around / hack to get the user's browser to download the fonts 
+ if they decide to save the presentation. -->
+<div style="visibility: hidden; width: 0px; height: 0px">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/Lato-Bold.woff">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/HammersmithOne.woff">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/Droid-Sans-Mono.woff">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/Gorditas-Regular.woff">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/FredokaOne-Regular.woff">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/Ubuntu.woff">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/Ubuntu-Bold.woff">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/PressStart2P-Regular.woff">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/Lato-BoldItalic.woff">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/AbrilFatface-Regular.woff">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/Lato-Regular.woff">
+</div>
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div class="bg bg-surf-grad-darkgreen strut-surface">
+<div class="bg innerBg strut-slide-0 bg-surf-grad-darkgreen">
+<div id="impress" style="position: absolute; transform-origin: left top 0px; transition: all 1000ms ease-in-out 500ms; transform-style: preserve-3d; top: 50%; left: 50%; transform: perspective(3698.23px) scale(0.270399);"><div style="position: absolute; transform-origin: left top 0px; transition: all 1000ms ease-in-out 0ms; transform-style: preserve-3d; transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg) translate3d(-2457.6px, -2764.8px, 0px);">
+	
+		
+			<div class="step active present" data-state="strut-slide-0 bg-surf-grad-darkgreen " data-x="2457.6" data-y="2764.8" data-scale="3" id="step-1" style="position: absolute; transform: translate(-50%, -50%) translate3d(2457.6px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-0" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 193px; left: 337px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 645px; left: 404px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 24px;" class="antialias">
+<div style="text-align: center;"><span style="color: rgb(238, 238, 238);">Szczecin </span><font color="#b69c16">13.11.2015</font></div>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 362px; left: 208px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<font color="#adadad">Jak zaczynałam w świecie "front-endu"</font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 469px; left: 357px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<font color="#adadad">Angelika Olejniczak</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-1 bg-surf-grad-darkgreen " data-x="6280.533333333334" data-y="2764.8" data-scale="3" id="step-2" style="position: absolute; transform: translate(-50%, -50%) translate3d(6280.53px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-1" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 13px; left: 4px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 66px; left: 356px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<font face="Ubuntu, sans-serif" color="#ffffff">Krótki plan</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer white-bullets" style="top: 225px; left: 80px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<ul><li><font color="#eeeeee"><span style="line-height: normal;">Pierwsza styczność z HTML - wersja 4.0 i raczkujące 4.01</span></font></li><li><font color="#eeeeee"><span style="line-height: normal;">Przegląd ówczesnych "standardów" tworzenia<br>stron internetowych</span></font></li><li><font color="#eeeeee"><span style="line-height: normal;">Rozwój "web-masteringu"</span></font></li><li><font color="#eeeeee"><span style="line-height: normal;">Praca front-end developera
+</span></font></li><li><font color="#eeeeee"><span style="line-height: normal;">Samodzielnie czy w zespole?</span></font></li><li><font color="#eeeeee"><span style="line-height: normal;">Technologie stosowane dzisiaj</span></font></li></ul>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-2 bg-surf-grad-darkgreen " data-x="10103.466666666667" data-y="2764.8" data-scale="3" id="step-3" style="position: absolute; transform: translate(-50%, -50%) translate3d(10103.5px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-2" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 13px; left: 4px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 274px; left: 333px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 32px;" class="antialias">
+<font color="#eeeeee" face="Lato"><i>&lt;HTML&gt;
+<br>&nbsp; &nbsp; &lt;HEAD&gt;
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;TITLE&gt;Tekst&lt;/TITLE&gt;
+<br>&nbsp; &nbsp; &lt;/HEAD&gt;
+<br>&nbsp; &nbsp; &lt;BODY&gt;
+<br>&nbsp; &nbsp; &nbsp; &nbsp; Tekst i inne
+<br>&nbsp; &nbsp; &lt;/BODY&gt;
+<br>&lt;/HTML&gt;</i><br></font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 36px; left: 346px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<font color="#eeeeee" face="Ubuntu, sans-serif">HTML w czasach<br>szkolnych</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 624px; left: 56px; -webkit-transform: rotate(-0.51rad)  ; -moz-transform: rotate(-0.51rad)  ; transform: rotate(-0.51rad)  ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 33px;" class="antialias">
+<font face="Ubuntu" color="#626262">&lt;center&gt;</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 657px; left: 759px; -webkit-transform: rotate(0.25rad)  ; -moz-transform: rotate(0.25rad)  ; transform: rotate(0.25rad)  ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 24px;" class="antialias">
+<font face="Ubuntu" color="#626262">&lt;marquee&gt;</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 193px; left: 843px; -webkit-transform: rotate(-0.44rad)  ; -moz-transform: rotate(-0.44rad)  ; transform: rotate(-0.44rad)  ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 24px;" class="antialias">
+<font color="#626262" face="Ubuntu">&lt;font&gt;</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 245px; left: 47px; -webkit-transform: rotate(-0.32rad)  ; -moz-transform: rotate(-0.32rad)  ; transform: rotate(-0.32rad)  ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 24px;" class="antialias">
+<font color="#626262" face="Ubuntu">&lt;u&gt;<br></font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 395px; left: 181px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 24px;" class="antialias">
+<font color="#626262" face="Ubuntu">&lt;b&gt;</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 459px; left: 837px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 24px;" class="antialias">
+<font color="#626262" face="Ubuntu">&lt;i&gt;</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-3 bg-surf-grad-darkgreen " data-x="13926.4" data-y="2764.8" data-scale="3" id="step-4" style="position: absolute; transform: translate(-50%, -50%) translate3d(13926.4px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-3" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 65px; left: 350px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<font face="Ubuntu" color="#ffffff">Ówczesne "standardy"</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer white-bullets" style="top: 202px; left: 80px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<ul><li><span style="color: rgb(255, 255, 255); line-height: normal;">Rażące kolory i kontrasty</span><br></li><li><span style="color: rgb(255, 255, 255); line-height: normal;">Przeładowanie strony treścią</span></li><li><span style="color: rgb(255, 255, 255); line-height: normal;">Eksplozja animowanych gifów</span></li><li><span style="color: rgb(255, 255, 255); line-height: normal;">Wzorzyste, często powielane tła</span></li><li><span style="color: rgb(255, 255, 255); line-height: normal;">Tabelki, ramki</span></li><li><span style="color: rgb(255, 255, 255); line-height: normal;">Ogromne, ciężkie kilobajtowo grafiki <br>z mapowaniem odnośników</span></li><li><span style="color: rgb(255, 255, 255); line-height: normal;">Teksty w postaci graficznej</span></li><li><span style="color: rgb(255, 255, 255); line-height: normal;">JavaScript metodą "prób i błędów"</span></li><li><span style="line-height: normal;">"Efekciarski" flash</span></li></ul>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 7px; left: 3px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-4 bg-surf-grad-darkgreen " data-x="17749.333333333332" data-y="2764.8" data-scale="3" id="step-5" style="position: absolute; transform: translate(-50%, -50%) translate3d(17749.3px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-4" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 7px; left: 3px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 65px; left: 381px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<font color="#ffffff" face="Ubuntu, sans-serif">Przykłady</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer color-link" style="top: 210px; left: 110px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<font color="#ffffff"><font face="Fredoka One, cursive">Arngren</font>&nbsp;<br>URL:&nbsp;<a href="http://www.arngren.net/" target="_blank">http://www.arngren.net/</a></font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer color-link" style="top: 330px; left: 110px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<font color="#ffffff"><font face="Fredoka One">DPGraph &nbsp;<br></font>URL: <a href="http://www.dpgraph.com/" target="_blank">http://www.dpgraph.com/</a></font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer color-link" style="top: 449px; left: 110px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<font color="#ffffff"><font face="Fredoka One">Dokimos - Ajff &nbsp;&nbsp;<br></font>URL: <a href="http://www.dokimos.org/ajff/" target="_blank">http://www.dokimos.org/ajff/</a></font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer color-link" style="top: 570px; left: 110px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<font color="#ffffff"><font face="Fredoka One">Ling's Cars &nbsp; &nbsp;<br></font>URL: <a href="http://www.lingscars.com/" target="_blank">http://www.lingscars.com/</a></font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-5 bg-surf-grad-darkgreen " data-x="21572.266666666666" data-y="2764.8" data-scale="3" id="step-6" style="position: absolute; transform: translate(-50%, -50%) translate3d(21572.3px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-5" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 201px; left: 27px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 585px; height: 288.2px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.31, 0.31);
+-moz-transform: scale(0.31, 0.31);
+transform: scale(0.31, 0.31)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/AVr4nrM.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 454px; left: 371px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 641px; height: 295.98px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.34, 0.34);
+-moz-transform: scale(0.34, 0.34);
+transform: scale(0.34, 0.34)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/zPytEQg.png">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 7px; left: 3px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-6 bg-surf-grad-darkgreen " data-x="25395.2" data-y="7065.6" data-scale="3" id="step-7" style="position: absolute; transform: translate(-50%, -50%) translate3d(25395.2px, 7065.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-6" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 241px; left: 322px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 380px; height: 287.28px;">
+<div class="transformContainer" style="-webkit-transform: scale(1.52, 1.52);
+-moz-transform: scale(1.52, 1.52);
+transform: scale(1.52, 1.52)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/2Aefc0H.gif">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 7px; left: 3px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-7 bg-surf-grad-darkgreen " data-x="29218.133333333335" data-y="7065.6" data-scale="3" id="step-8" style="position: absolute; transform: translate(-50%, -50%) translate3d(29218.1px, 7065.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-7" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 65px; left: 380px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<font color="#ffffff" face="Ubuntu, sans-serif">A dzisiaj...</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer color-link" style="top: 210px; left: 110px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<font color="#ffffff"><font face="Fredoka One, cursive">Wove</font> 
+<br>URL: <a href="http://www.wove.com/" target="_blank">http://www.wove.com</a></font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer color-link" style="top: 330px; left: 110px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<font color="#ffffff"><font face="Fredoka One">Rainforest &nbsp;<br></font>URL: <a href="http://rainforest.arkivert.no/" target="_blank">http://rainforest.arkivert.no</a></font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 7px; left: 3px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer color-link" style="top: 450px; left: 111px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<font color="#ffffff"><font face="Fredoka One">Made by Hand &nbsp;&nbsp;<br></font>URL: <a href="http://thisismadebyhand.com/" target="_blank">http://thisismadebyhand.com/</a></font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer color-link" style="top: 570px; left: 110px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<font color="#ffffff"><font face="Fredoka One, cursive">Lubuski Teatr w ZG - Spacer&nbsp;</font><font face="Lato">  
+<br></font>URL: <a href="http://teatr.zgora.pl/spacer/" target="_blank">http://teatr.zgora.pl/spacer/</a></font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-8 bg-surf-grad-darkgreen " data-x="33041.066666666666" data-y="7065.6" data-scale="3" id="step-9" style="position: absolute; transform: translate(-50%, -50%) translate3d(33041.1px, 7065.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-8" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer border-color" style="top: 49px; left: 737px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 218px; height: 311.08px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.49, 0.49);
+-moz-transform: scale(0.49, 0.49);
+transform: scale(0.49, 0.49)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/N5cGWPW.png">
+</div>
+</div>
+			
+			<div class="componentContainer border-color" style="top: 51px; left: 40px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 645px; height: 308.86px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.34, 0.34);
+-moz-transform: scale(0.34, 0.34);
+transform: scale(0.34, 0.34)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/PMJ5oUv.png">
+</div>
+</div>
+			
+			<div class="componentContainer border-color" style="top: 370px; left: 140px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 744px; height: 362.19px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.39, 0.39);
+-moz-transform: scale(0.39, 0.39);
+transform: scale(0.39, 0.39)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/8tdQZf5.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-9 bg-surf-grad-darkgreen " data-x="36864" data-y="7065.6" data-scale="3" id="step-10" style="position: absolute; transform: translate(-50%, -50%) translate3d(36864px, 7065.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-9" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 7px; left: 3px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 32px; left: 381px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<font color="#ffffff" face="Ubuntu">Front-end<br>Development</font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer white-bullets" style="top: 232px; left: 80px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<ul><li><span style="line-height: normal;">Konstruktywna krytyka?</span></li></ul><div><font color="#ffffff"><br></font></div><ul><li><span style="line-height: normal;">Tworzenie pięknych rzeczy, nawet&nbsp;<br>przy braku talentu graficznego</span></li><li><span style="line-height: normal;">Wyzwania logiczne</span></li><li><span style="line-height: normal;">Komunikacja z ludźmi</span></li><li><span style="line-height: normal;">Udział w dużych projektach</span></li><li><span style="line-height: normal;">Satysfakcja</span></li></ul><div><font color="#ffffff"><br></font></div><ul><li><span style="line-height: normal;">Rosnące zapotrzebowanie na developerów</span></li><li><span style="line-height: normal;">Dynamiczny rozwój technologii</span></li></ul>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-10 bg-surf-grad-darkgreen " data-x="40686.933333333334" data-y="7065.6" data-scale="3" id="step-11" style="position: absolute; transform: translate(-50%, -50%) translate3d(40686.9px, 7065.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-10" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 7px; left: 3px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer white-bullets" style="top: 225px; left: 80px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<ul><li><span style="line-height: normal;">Kontakty z klientami</span></li><li><span style="line-height: normal;">Metodyki Agile</span></li><li><span style="line-height: normal;">Praca w zespole "na miejscu" <br>oraz w zespole międzynarodowym</span></li><li><span style="line-height: normal;">Programowanie aplikacji dla dużych klientów</span></li><li><span style="line-height: normal;">Możliwość odbywania podróży, w tym zagranicznych</span></li><li><span style="line-height: normal;">Szkolenia, konferencje</span></li><li><span style="line-height: normal;">Praca zdalna</span></li></ul>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-11 bg-surf-grad-darkgreen " data-x="44509.86666666667" data-y="7065.6" data-scale="3" id="step-12" style="position: absolute; transform: translate(-50%, -50%) translate3d(44509.9px, 7065.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-11" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 7px; left: 3px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 4px; left: 0px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer white-bullets" style="top: 219px; left: 80px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 36px;" class="antialias">
+<ul><li><span style="font-family: Lato; line-height: normal;">IDE: <b>Sublime 2</b>, zwykły <b>Notepad++</b> też się nada&nbsp;</span><br></li><li><span style="line-height: normal;">System kontroli wersji: <b>Git</b>, <b>Perforce</b>&nbsp;</span><br></li><li><span style="line-height: normal;">CSS Preprocesor: <b>LESS</b>, <b>SASS</b>&nbsp;</span><br></li><li><span style="line-height: normal;">CSS Framework: <b>Bootstrap</b>&nbsp;</span><br></li><li><span style="line-height: normal;">Templating: <b>Jade</b>, <b>AngularJS</b> (wbudowany)&nbsp;</span><br></li><li><span style="line-height: normal;">Podstawowe biblioteki JS: <b>jQuery</b>&nbsp;</span><br></li><li><span style="line-height: normal;">Framework JS: <b>Backbone</b>, <b>AngularJS</b>&nbsp;</span><br></li><li><span style="line-height: normal;">System automatyzacji pracy: <b>Gulp</b>&nbsp;</span><br></li><li><span style="line-height: normal;">Menadżer pakietów: <b>npm</b>&nbsp;</span><br></li><li><span style="line-height: normal;">Pluginy&nbsp;</span><br></li></ul>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 66px; left: 381px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<font color="#ffffff" face="Ubuntu, sans-serif">Technologie</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-12 bg-surf-grad-darkgreen " data-x="48332.8" data-y="11366.4" data-scale="3" id="step-13" style="position: absolute; transform: translate(-50%, -50%) translate3d(48332.8px, 11366.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-342f38 slideContainer strut-slide-12" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 4px; left: 0px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/lsdTmzF.jpg">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 206px; left: 245px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<font color="#ffffff" face="Ubuntu, sans-serif">Dziękuję za uwagę</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 350px; left: 262px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/Jn5uyOQ.gif">
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 6px; left: 825px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 194px; height: 38.76px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.22, 0.22);
+-moz-transform: scale(0.22, 0.22);
+transform: scale(0.22, 0.22)">
+<img src="./AOL_Pres_MeetJS02-logo-white_files/6h5LdYF.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+	<div id="overview" class="step past" data-state="strut-slide-overview" data-x="25395.2" data-y="7065.6" data-scale="9" style="position: absolute; transform: translate(-50%, -50%) translate3d(25395.2px, 7065.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(9); transform-style: preserve-3d;"></div>
+	
+</div></div>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+</div>
+</div></body></html>
