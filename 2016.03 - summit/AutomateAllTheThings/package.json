@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^5.8.20",
+    "browser-sync": "^2.8.2",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-newer": "^0.5.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sequence": "^0.4.0",
+    "gulp-size": "^1.2.3",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.4",
+    "path": "^0.11.14",
+    "pretty-hrtime": "^1.0.0",
+    "require-all": "^1.1.0"
+  },
+  "engines": {
+    "node": ">= 0.10",
+    "npm": ">= 2.1"
+  }
+}
